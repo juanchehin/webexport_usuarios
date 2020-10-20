@@ -1,9 +1,12 @@
 @include('usuarios\header');
 {{--  Mensaje  --}}
-@if(Session::has('Mensaje')){{
-    Session::get('Mensaje')
-}}
+@if(Session::has('Mensaje'))
+<div class="alert alert-success" role="alert">
+    {{ Session::get('Mensaje') }}
+</div>
+
 @endif
+
 {{--  Cuerpo de pagina  --}}
 
 <div class="container">
@@ -28,7 +31,7 @@
         <div class="card">
             <div class="card-body">
 
-                <h3 class="card-title">Usuarios registrados ( <small> </small> )</h3>
+                {{--  <h3 class="card-title">Usuarios registrados ( <small> </small> )</h3>  --}}
 
 <table class="table">
   <thead class="thead-dark">
@@ -65,21 +68,9 @@
         @endforeach
 </table>
 
-
-</div>
-        </div>
-        <br>
-        <button class="btn btn-secondary">
-            Anteriores
-          </button>
-
-        <button class="btn btn-secondary" style="margin-left: 50px; ">
-              Siguientes
-          </button>
-        <br>
-    </div>
-    <!-- <br><br> -->
+{{--  {{ $usuarios->links() }}  --}}
 
 
-</div>
+
 @include('usuarios\footer');
+

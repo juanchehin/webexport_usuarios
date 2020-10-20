@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2020 at 03:06 PM
+-- Generation Time: Oct 20, 2020 at 03:48 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -233,12 +233,12 @@ CREATE TABLE `users` (
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios` (
   `id` int(10) UNSIGNED NOT NULL,
-  `Apellido` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Nombre` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Edad` int(11) NOT NULL,
-  `Email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Telefono` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `updated_at` date DEFAULT NULL
+  `Apellido` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Almacena el Apellido del usuario',
+  `Nombre` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Almacena el Nombre del usuario',
+  `Edad` int(11) NOT NULL COMMENT 'Almacena la edad del usuario',
+  `Email` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Almacena el Email del usuario',
+  `Telefono` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Almacena el Telefono del usuario',
+  `updated_at` date DEFAULT NULL COMMENT 'Almacena la ultima actualizacion de usuario'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -246,8 +246,12 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `Apellido`, `Nombre`, `Edad`, `Email`, `Telefono`, `updated_at`) VALUES
-(2, 'Maradona lopo', 'Diego', 90, 'diegoMarado@gamail.com', '4566', '2020-10-20'),
-(3, 'Batistura', 'Roman', 33, 'batigol@gmail.com', '1234', NULL);
+(3, 'Batistuta', 'Roman', 33, 'batigol@gmail.com', '1234', '2020-10-20'),
+(5, 'GOicoechea', 'Juan Jose', 36, 'Jose@gmail.com', '12312312123', NULL),
+(9, 'Pele', 'Juan Jose', 30, 'pele@gmail.com', '74985212334', NULL),
+(11, 'Apellido 3', 'Nombre 3', 22, '3@mail.com', '12344', NULL),
+(12, 'Apellido 4', 'Nombre 4', 65, 'ombre@gmailc.om', '564456', NULL),
+(13, 'Apellido 5', 'Nombre 5', 5, 'jsa@gmaicl', '32456', NULL);
 
 --
 -- Indexes for dumped tables
@@ -311,7 +315,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

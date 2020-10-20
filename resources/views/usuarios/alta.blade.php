@@ -30,7 +30,7 @@
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Telefono'}} </label>
-                                <input name="Telefono" required type="text" class="form-control" id="inputCity" placeholder="Telefono...">
+                                <input maxlength="11" size="11" required pattern="[0-9]*" name="Telefono" required type="text" class="form-control" id="inputCity" placeholder="Telefono...">
                             </div>
                         </div>
                     </div>
