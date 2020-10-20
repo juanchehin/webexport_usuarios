@@ -22,7 +22,7 @@ hola soy inbdex
     </div>
     <div class="row">
         <div class="col-md-3 ml-md-auto">
-            <button type="button" class="btn waves-effect waves-light btn-rounded btn-primary" onclick="location='nuevo.php'">
+            <button type="button" class="btn waves-effect waves-light btn-rounded btn-primary" onclick="location='usuarios/create'">
             <i class="fa fa-plus"></i>
             Nuevo usuario
             </button>
@@ -59,10 +59,14 @@ hola soy inbdex
             <td>{{ $usuario->Email }}</td>
             <td>{{ $usuario->Telefono }}</td>
             <td>
-            <div class="btn-group" role="group" aria-label="Basic example">
+            {{--  <div class="btn-group" role="group" aria-label="Basic example">  --}}
               <a type="button" class="btn btn-success">Editar</a>
-              <a type="button" class="btn btn-danger">Eliminar</a>
-            </div>
+              <form method="post" action="{{ url('/usuarios/'.$usuario->id) }}">
+              {{ csrf_field() }}
+              {{ method_field('DELETE') }}
+              <button type="submit" onclick="return confirm('¿Realmente desea borrar el registro?');" class="btn btn-danger">Eliminar</button>
+            {{--  </div>  --}}
+                </form>
             </td>
           </tr>
         </tbody>
