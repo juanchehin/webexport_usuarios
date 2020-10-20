@@ -4,20 +4,17 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </body>
 </html>
 <br><br>
+<div class="alert alert-secondary" role="alert">
 <footer class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-4 mb-5">
                 <h3>Acerca de 'Usuarios'</h3>
-                <ul class="list-unstyled footer-link d-flex footer-social">
-                    <li><a href="https://www.facebook.com/juan.chehin/" class="p-2"><span class="fa fa-facebook"></span></a></li>
-                    <li><a href="https://www.instagram.com/chehin.j/" class="p-2"><span class="fa fa-instagram"></span></a></li>
-                </ul>
-
+                'Usuarios' permite realizar un CRUD de usuarios!
             </div>
             <div class="col-md-5 mb-5 pl-md-5">
                 <div class="mb-5">
@@ -57,3 +54,4 @@
         </div>
     </div>
 </footer>
+</div>

@@ -15,7 +15,7 @@ class UsuariosController extends Controller
     public function index()
     {
         //
-        $datos['usuarios']=Usuarios::paginate(5);
+        $datos['usuarios']=Usuarios::paginate(10);
 
         return view('usuarios.index',$datos);
     }

@@ -1,4 +1,4 @@
-@include('usuarios\header');
+@include('usuarios\header')
 {{--  Mensaje  --}}
 @if(Session::has('Mensaje'))
 <div class="alert alert-success" role="alert">
@@ -65,12 +65,13 @@
             </td>
           </tr>
         </tbody>
-        @endforeach
-</table>
 
+        @endforeach
+
+</table>
 {{--  {{ $usuarios->links() }}  --}}
 
 
 
-@include('usuarios\footer');
+@include('usuarios\footer')
 

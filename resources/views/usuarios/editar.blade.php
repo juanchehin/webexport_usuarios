@@ -28,7 +28,7 @@
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Email'}} </label>
-                                <input name="Email" required type="email" value="{{ $usuario->Email }}" class="form-control" id="Email" placeholder="Email...">
+                                <input name="Email" type="email" value="{{ $usuario->Email }}" class="form-control" id="Email" placeholder="Email...">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Telefono'}} </label>

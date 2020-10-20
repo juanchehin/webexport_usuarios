@@ -7,16 +7,19 @@
 - Visual Studio Code
 - XAMPP
 - LARAVEL
-- MySQL
+- MySQL (Como servicio de la base de datos)
 - MySQL Workbench
 - Github
 - Mozilla Firefox
 - Bootstrap
+- Materialize (material-icons)
+- Apache Server
+- Compose
 
 ## Mejoras
 
 - Login
-- Control de datos en formulario
+- Control de datos en controlador
 - Mejora de estetica mediante CSS
 - Buscador
 - Seguridad
