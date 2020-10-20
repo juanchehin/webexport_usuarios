@@ -59,14 +59,14 @@ hola soy inbdex
             <td>{{ $usuario->Email }}</td>
             <td>{{ $usuario->Telefono }}</td>
             <td>
-            {{--  <div class="btn-group" role="group" aria-label="Basic example">  --}}
-              <a type="button" class="btn btn-success">Editar</a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="{{ url('/usuarios/'.$usuario->id.'/edit') }}" type="button" class="btn btn-success">Editar</a>
               <form method="post" action="{{ url('/usuarios/'.$usuario->id) }}">
-              {{ csrf_field() }}
-              {{ method_field('DELETE') }}
-              <button type="submit" onclick="return confirm('¿Realmente desea borrar el registro?');" class="btn btn-danger">Eliminar</button>
-            {{--  </div>  --}}
+                    {{ csrf_field() }}
+                    {{ method_field('DELETE') }}
+                    <button type="submit" onclick="return confirm('¿Realmente desea borrar el registro?');" class="btn btn-danger">Eliminar</button>
                 </form>
+            </div>
             </td>
           </tr>
         </tbody>
