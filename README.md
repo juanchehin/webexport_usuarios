@@ -24,6 +24,7 @@
 - Buscador
 - Seguridad
 - Paginacion de usuarios
+- Testing de unidades, integracion.
 - ...
 
 ## Consideraciones
