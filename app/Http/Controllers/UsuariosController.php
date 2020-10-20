@@ -48,7 +48,7 @@ class UsuariosController extends Controller
 
         Usuarios::insert($datosUsuario);
 
-        return redirect('usuarios');
+        return redirect('usuarios')->with('Mensaje','Usuario Creado');
     }
 
     /**
@@ -90,8 +90,11 @@ class UsuariosController extends Controller
 
         Usuarios::where('id','=',$id)->update($datosUsuario);
 
-        $usuario = Usuarios::findOrFail($id);
-        return view('usuarios.editar',compact('usuario'));
+        // $usuario = Usuarios::findOrFail($id);
+        // return view('usuarios.editar',compact('usuario'));
+
+        return redirect('usuarios')->with('Mensaje','Usuario Editado');
+
     }
 
     /**
@@ -106,6 +109,7 @@ class UsuariosController extends Controller
         $IdUsuario = $Id;
         Usuarios::destroy($IdUsuario);
 
-        return redirect('usuarios');
+        // return redirect('usuarios');
+        return redirect('usuarios')->with('Mensaje','Usuario Eliminado');
     }
 }
