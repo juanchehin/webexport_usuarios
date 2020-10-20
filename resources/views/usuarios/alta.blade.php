@@ -34,15 +34,15 @@
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Edad'}} </label>
-                                <input name="Edad" type="number" class="form-control" id="Edad" placeholder="Edad..">
+                                <input name="Edad" required type="number" class="form-control" id="Edad" placeholder="Edad..">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Email'}} </label>
-                                <input name="Email" type="text" class="form-control" id="Email" placeholder="Email...">
+                                <input name="Email" required type="email" class="form-control" id="Email" placeholder="Email...">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label>{{'Telefono'}} </label>
-                                <input name="Telefono" type="text" class="form-control" id="inputCity" placeholder="Telefono...">
+                                <input name="Telefono" required type="text" class="form-control" id="inputCity" placeholder="Telefono...">
                             </div>
                         </div>
                     </div>

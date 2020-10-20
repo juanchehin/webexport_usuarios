@@ -39,7 +39,12 @@ class UsuariosController extends Controller
     public function store(Request $request)
     {
         //
-        $datosUsuario = request()->all();
+        // $datosUsuario = request()->all();
+
+        $datosUsuario = request()->except('_token','alta');
+        // $datosUsuario = request()->except('alta');
+
+        Usuarios::insert($datosUsuario);
 
         return response()->json($datosUsuario);
     }
