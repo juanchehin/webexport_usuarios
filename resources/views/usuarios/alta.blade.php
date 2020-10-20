@@ -46,11 +46,14 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary" name="alta" value="alta">Cargar</button>
-                    <br>
+
                 </div>
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" name="alta" value="alta">Cargar</button>
+                <br>
             </form>
+                <a type="button" class="btn btn-success btn-lg btn-block" href="{{ url('usuarios') }}">Cancelar</a>
+                <br>
         </div>
     </div>
 </div>

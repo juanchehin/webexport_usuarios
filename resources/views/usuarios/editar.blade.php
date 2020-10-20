@@ -49,10 +49,11 @@
                         </div>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary" name="edita" value="edita">Guardar</button>
-                    <br>
-                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" name="edita" value="edita">Editar</button>
+                <br>
             </form>
+                <a type="button" class="btn btn-success btn-lg btn-block" href="{{ url('usuarios') }}">Cancelar</a>
+                <br>
         </div>
     </div>
 </div>

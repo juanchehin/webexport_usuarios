@@ -1,4 +1,3 @@
-hola soy inbdex
 <!DOCTYPE html>
 <html lang="en">
 <head>

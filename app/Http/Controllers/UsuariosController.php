@@ -48,7 +48,7 @@ class UsuariosController extends Controller
 
         Usuarios::insert($datosUsuario);
 
-        return response()->json($datosUsuario);
+        return redirect('usuarios');
     }
 
     /**
